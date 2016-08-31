@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		117CFF681D7646FD00938915 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 117CFF671D7646FD00938915 /* main.m */; };
+		117CFF6B1D7646FD00938915 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 117CFF6A1D7646FD00938915 /* AppDelegate.m */; };
+		117CFF6E1D7646FD00938915 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117CFF6D1D7646FD00938915 /* ViewController.m */; };
+		117CFF711D7646FD00938915 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 117CFF6F1D7646FD00938915 /* Main.storyboard */; };
+		117CFF731D7646FD00938915 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 117CFF721D7646FD00938915 /* Assets.xcassets */; };
+		117CFF761D7646FD00938915 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 117CFF741D7646FD00938915 /* LaunchScreen.storyboard */; };
+		254F1F98CB188410522D6D50 /* libPods-provaAF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C17F6C3C4558837AF9E2C9 /* libPods-provaAF.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		117CFF631D7646FD00938915 /* provaAF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = provaAF.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		117CFF671D7646FD00938915 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		117CFF691D7646FD00938915 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		117CFF6A1D7646FD00938915 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		117CFF6C1D7646FD00938915 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		117CFF6D1D7646FD00938915 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		117CFF701D7646FD00938915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		117CFF721D7646FD00938915 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		117CFF751D7646FD00938915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		117CFF771D7646FD00938915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		128DC59A0C5FAAC4A11B1275 /* Pods-provaAF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-provaAF.release.xcconfig"; path = "Pods/Target Support Files/Pods-provaAF/Pods-provaAF.release.xcconfig"; sourceTree = "<group>"; };
+		39725FC734FCA0857763E051 /* Pods-provaAF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-provaAF.debug.xcconfig"; path = "Pods/Target Support Files/Pods-provaAF/Pods-provaAF.debug.xcconfig"; sourceTree = "<group>"; };
+		87C17F6C3C4558837AF9E2C9 /* libPods-provaAF.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-provaAF.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		117CFF601D7646FD00938915 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				254F1F98CB188410522D6D50 /* libPods-provaAF.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		117CFF5A1D7646FD00938915 = {
+			isa = PBXGroup;
+			children = (
+				117CFF651D7646FD00938915 /* provaAF */,
+				117CFF641D7646FD00938915 /* Products */,
+				D673A286B4878652ADBBCC09 /* Pods */,
+				835796ADC15D2ADB0E35E3AA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		117CFF641D7646FD00938915 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				117CFF631D7646FD00938915 /* provaAF.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		117CFF651D7646FD00938915 /* provaAF */ = {
+			isa = PBXGroup;
+			children = (
+				117CFF691D7646FD00938915 /* AppDelegate.h */,
+				117CFF6A1D7646FD00938915 /* AppDelegate.m */,
+				117CFF6C1D7646FD00938915 /* ViewController.h */,
+				117CFF6D1D7646FD00938915 /* ViewController.m */,
+				117CFF6F1D7646FD00938915 /* Main.storyboard */,
+				117CFF721D7646FD00938915 /* Assets.xcassets */,
+				117CFF741D7646FD00938915 /* LaunchScreen.storyboard */,
+				117CFF771D7646FD00938915 /* Info.plist */,
+				117CFF661D7646FD00938915 /* Supporting Files */,
+			);
+			path = provaAF;
+			sourceTree = "<group>";
+		};
+		117CFF661D7646FD00938915 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				117CFF671D7646FD00938915 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		835796ADC15D2ADB0E35E3AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87C17F6C3C4558837AF9E2C9 /* libPods-provaAF.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D673A286B4878652ADBBCC09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39725FC734FCA0857763E051 /* Pods-provaAF.debug.xcconfig */,
+				128DC59A0C5FAAC4A11B1275 /* Pods-provaAF.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		117CFF621D7646FD00938915 /* provaAF */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 117CFF7A1D7646FD00938915 /* Build configuration list for PBXNativeTarget "provaAF" */;
+			buildPhases = (
+				972A82E816EA954936EB7E7B /* [CP] Check Pods Manifest.lock */,
+				117CFF5F1D7646FD00938915 /* Sources */,
+				117CFF601D7646FD00938915 /* Frameworks */,
+				117CFF611D7646FD00938915 /* Resources */,
+				6A0F7A24E27B68EFF474E26B /* [CP] Embed Pods Frameworks */,
+				0B6F0D6914B1A4521881DD0D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = provaAF;
+			productName = provaAF;
+			productReference = 117CFF631D7646FD00938915 /* provaAF.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		117CFF5B1D7646FD00938915 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = miquel;
+				TargetAttributes = {
+					117CFF621D7646FD00938915 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 117CFF5E1D7646FD00938915 /* Build configuration list for PBXProject "provaAF" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 117CFF5A1D7646FD00938915;
+			productRefGroup = 117CFF641D7646FD00938915 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				117CFF621D7646FD00938915 /* provaAF */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		117CFF611D7646FD00938915 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				117CFF761D7646FD00938915 /* LaunchScreen.storyboard in Resources */,
+				117CFF731D7646FD00938915 /* Assets.xcassets in Resources */,
+				117CFF711D7646FD00938915 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B6F0D6914B1A4521881DD0D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-provaAF/Pods-provaAF-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A0F7A24E27B68EFF474E26B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-provaAF/Pods-provaAF-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		972A82E816EA954936EB7E7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		117CFF5F1D7646FD00938915 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				117CFF6E1D7646FD00938915 /* ViewController.m in Sources */,
+				117CFF6B1D7646FD00938915 /* AppDelegate.m in Sources */,
+				117CFF681D7646FD00938915 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		117CFF6F1D7646FD00938915 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				117CFF701D7646FD00938915 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		117CFF741D7646FD00938915 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				117CFF751D7646FD00938915 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		117CFF781D7646FD00938915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		117CFF791D7646FD00938915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		117CFF7B1D7646FD00938915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39725FC734FCA0857763E051 /* Pods-provaAF.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = provaAF/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kk.provaAF;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		117CFF7C1D7646FD00938915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 128DC59A0C5FAAC4A11B1275 /* Pods-provaAF.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = provaAF/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kk.provaAF;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		117CFF5E1D7646FD00938915 /* Build configuration list for PBXProject "provaAF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				117CFF781D7646FD00938915 /* Debug */,
+				117CFF791D7646FD00938915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		117CFF7A1D7646FD00938915 /* Build configuration list for PBXNativeTarget "provaAF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				117CFF7B1D7646FD00938915 /* Debug */,
+				117CFF7C1D7646FD00938915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 117CFF5B1D7646FD00938915 /* Project object */;
+}
