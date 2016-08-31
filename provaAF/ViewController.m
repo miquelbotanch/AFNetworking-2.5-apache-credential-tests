@@ -13,10 +13,12 @@
 @end
 
 @implementation ViewController
+@synthesize tv;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    tv.text = @"";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,8 +39,10 @@
     [operation setResponseSerializer:[AFJSONResponseSerializer alloc]];
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"Success: %@", responseObject);
+        tv.text = operation.responseString;
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Failure: %@", error);
+        tv.text = [error description];
     }];
     [manager.operationQueue addOperation:operation];
 
@@ -67,8 +71,10 @@
     [operation setResponseSerializer:[AFJSONResponseSerializer alloc]];
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"Success: %@", responseObject);
+        tv.text = operation.responseString;
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Failure: %@", error);
+        tv.text = [error description];
     }];
     [manager.operationQueue addOperation:operation];
 }

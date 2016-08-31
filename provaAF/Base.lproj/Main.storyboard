@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,29 +15,53 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ft-tz-ISO">
-                                <rect key="frame" x="34" y="108" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ft-tz-ISO">
+                                <rect key="frame" x="101" y="20" width="118" height="30"/>
+                                <state key="normal" title="AUTH"/>
                                 <connections>
                                     <action selector="boto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cMp-PP-Qcs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihN-fv-jeF">
-                                <rect key="frame" x="34" y="163" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihN-fv-jeF">
+                                <rect key="frame" x="101" y="58" width="118" height="30"/>
+                                <state key="normal" title="POST"/>
                                 <connections>
                                     <action selector="post2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Te0-am-t4j"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ofm-Ve-MpJ">
+                                <rect key="frame" x="20" y="96" width="280" height="364"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5ft-tz-ISO" firstAttribute="leading" secondItem="ihN-fv-jeF" secondAttribute="leading" id="2yi-qA-BIJ"/>
+                            <constraint firstItem="5ft-tz-ISO" firstAttribute="trailing" secondItem="ihN-fv-jeF" secondAttribute="trailing" id="C19-JU-XYP"/>
+                            <constraint firstItem="ihN-fv-jeF" firstAttribute="centerX" secondItem="ofm-Ve-MpJ" secondAttribute="centerX" id="Duq-Xk-xPU"/>
+                            <constraint firstAttribute="trailing" secondItem="ofm-Ve-MpJ" secondAttribute="trailing" constant="20" id="DzC-XB-Nck"/>
+                            <constraint firstItem="ofm-Ve-MpJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="UUa-3U-L1L"/>
+                            <constraint firstItem="ihN-fv-jeF" firstAttribute="top" secondItem="5ft-tz-ISO" secondAttribute="bottom" constant="8" symbolic="YES" id="dbh-nQ-PbJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ofm-Ve-MpJ" secondAttribute="bottom" constant="20" id="eco-G0-cRj"/>
+                            <constraint firstItem="ihN-fv-jeF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="85" id="gac-WM-aaB"/>
+                            <constraint firstItem="ofm-Ve-MpJ" firstAttribute="top" secondItem="ihN-fv-jeF" secondAttribute="bottom" constant="8" symbolic="YES" id="pzs-Pi-oYJ"/>
+                            <constraint firstItem="5ft-tz-ISO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="xlW-ts-jcW"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="tv" destination="ofm-Ve-MpJ" id="EMV-by-tfR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="239" y="136"/>
         </scene>
     </scenes>
 </document>
