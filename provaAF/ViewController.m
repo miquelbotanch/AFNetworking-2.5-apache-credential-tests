@@ -26,6 +26,9 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)boto:(id)sender {
+/*
+    // 2.0
+ 
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     
     NSURLCredential *credential = [NSURLCredential credentialWithUser:@"user" password:@"passwd" persistence:NSURLCredentialPersistenceNone];
@@ -45,7 +48,29 @@
         tv.text = [error description];
     }];
     [manager.operationQueue addOperation:operation];
+*/
+    // 3.0
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    
+    [manager setRequestSerializer:[AFHTTPRequestSerializer serializer]];
+    [manager.requestSerializer setAuthorizationHeaderFieldWithUsername:@"user" password:@"passwd"];
+    
+    [manager GET:@"https://httpbin.org/basic-auth/user/passwd"
+       parameters:[NSDictionary dictionaryWithObjectsAndKeys:@"A",@"B", nil]
+         progress:^(NSProgress * _Nonnull uploadProgress) {
+             NSLog(@"completion: %f",uploadProgress.fractionCompleted );
+         }
+          success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+              NSLog(@"JSON: %@", responseObject);
+              //              tv.text = responseObject;
+              tv.text = [NSString stringWithFormat:@"%@",responseObject];
+              
 
+          }
+          failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+              NSLog(@"Error: %@", error);
+              tv.text = [error description];
+          }];
 
     // per fer un enviament
 /*
@@ -57,6 +82,8 @@
 */
 }
 - (IBAction)post2:(id)sender {
+/*
+    // 2.0
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     
     NSURLCredential *credential = [NSURLCredential credentialWithUser:@"user" password:@"passwd" persistence:NSURLCredentialPersistenceNone];
@@ -77,6 +104,28 @@
         tv.text = [error description];
     }];
     [manager.operationQueue addOperation:operation];
+*/
+    
+    // 3.0
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    
+    [manager setRequestSerializer:[AFHTTPRequestSerializer serializer]];
+    [manager.requestSerializer setAuthorizationHeaderFieldWithUsername:@"user" password:@"passwd"];
+
+    [manager POST:@"http://httpbin.org/post"
+       parameters:[NSDictionary dictionaryWithObjectsAndKeys:@"A",@"B", nil]
+         progress:^(NSProgress * _Nonnull uploadProgress) {
+             NSLog(@"completion: %f",uploadProgress.fractionCompleted );
+         }
+          success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+              NSLog(@"JSON: %@", responseObject);
+//              tv.text = responseObject;
+              tv.text = [NSString stringWithFormat:@"%@",responseObject];
+          }
+          failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+              NSLog(@"Error: %@", error);
+              tv.text = [error description];
+          }];
 }
 
 @end
